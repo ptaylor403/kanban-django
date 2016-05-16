@@ -17,7 +17,12 @@ $task.submit(function(){
       description: $description.val(),
       priority: $priority.val(),
       status: $status.val()
-    }
+    },
+    success : function(json) {
+            $('#post-text').val(''); // remove the value from the input
+            console.log(json); // log the returned json to the console
+            console.log("success"); // another sanity check
+          }
   });
 
   return false;

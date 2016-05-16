@@ -5,6 +5,17 @@ label{
   vertical-align: right;
 }
 
+/*div.columns       { width: 900px; }
+div.columns div   { width: 200px; height: 200px; float: left; }
+div.clear         { clear: both; }*/
+
+#current{
+  position: absolute;
+  top: 30px;
+  right: 300px;
+
+}
+
 
 #button{
   background-color: grey;
@@ -16,6 +27,12 @@ input{
   font-size: 16px;
   font-family: inherit;
   margin: 5px;
+}
+
+#tasks{
+  position: absolute;
+  top: 200px;
+  right: 300px;
 }
 
 body{
