@@ -5,6 +5,7 @@ label{
   vertical-align: right;
 }
 
+
 #button{
   background-color: grey;
   font-size: 16px;
@@ -12,7 +13,8 @@ label{
 }
 
 input{
-  font-family: inherit;;
+  font-size: 16px;
+  font-family: inherit;
   margin: 5px;
 }
 
