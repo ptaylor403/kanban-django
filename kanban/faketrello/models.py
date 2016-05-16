@@ -7,4 +7,4 @@ class Faketrello(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField(blank=True)
     priority = models.CharField(max_length=10)
-    # status = I think this needs to be a model, for a drop-down menu
+    status = models.CharField(max_length=45)
