@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../static/css/stylesheet.css"></link>
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="{% url 'login' %}" method="post">
+      <h2>User Login</h2>
+      {% csrf_token %}
+      <label for="">Username:</label>
+        <input type="text" name="username" value=""><br>
+      <label for="">Password:</label>
+        <input type="password" name="password" value=""><br>
+      <input id="button" type="button" name="submit" value="Log In">
+      <input type="hidden" name="next" value="{{ next }}">
+    </form>
+  </body>
+</html>

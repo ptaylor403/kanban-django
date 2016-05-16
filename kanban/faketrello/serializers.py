@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Faketrello
+from .models import Task
 
 
-class FaketrelloSerializer(serializers.HyperlinkedModelSerializer):
+class TaskSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Faketrello
-        fields = ('url', 'user', 'title', 'description', 'priority')
+        model = Task
+        fields = ('url', 'title', 'description', 'priority', 'status')

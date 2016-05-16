@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../static/css/stylesheet.css"></link>
+    <meta charset="utf-8">
+    <title>Tasks</title>
+  </head>
+  <body>
+
+    <form action="index.html" method="post">
+      <h2>Create New Task</h2>
+      <label for="">Title:</label>
+        <input type="text" name="title" value={{title}}><br>
+      <label for="">Description:</label>
+        <input type="text" name="description" value={{description}}><br>
+      <label for="">Priority:</label><br>
+        <input type="radio" name="priority" value="urgent" checked>Urgent<br>
+        <input type="radio" name="priority" value="important">Important<br>
+        <input type="radio" name="priority" value="unimportant">Unimportant<br>
+        <input type="radio" name="priority" value="other">Other:
+        <input type="text" name="priority" value=""><br>
+      <label for="">Status:</label>
+        <input type="text" name="status" value={{status}}><br>
+      <input id="button" type="button" name="submit" value="Create Task">
+    </form>
+    <p>
+    {% for title in task %}
+      Title:{{ task.title }}
+    {% endfor %}
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="../../static/faketrello/faketrello.js"></script>
+
+  </body>
+</html>
