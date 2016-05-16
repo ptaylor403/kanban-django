@@ -5,4 +5,4 @@ from .models import Faketrello
 class FaketrelloSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Faketrello
-        fields = ('user', 'title', 'description', 'priority')
+        fields = ('url', 'user', 'title', 'description', 'priority')

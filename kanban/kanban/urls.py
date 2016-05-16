@@ -3,7 +3,7 @@ from rest_framework import routers
 from faketrello import views
 
 router = routers.DefaultRouter()
-router.register(r'faketrello', views.FaketrelloViewSet)
+router.register(r'api/tasks', views.FaketrelloViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
