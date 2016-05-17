@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404
 
 
 class TaskViewSet(viewsets.ModelViewSet):
-    queryset = Task.objects.all().order_by('title')
+    queryset = Task.objects.all().order_by('id')
     serializer_class = TaskSerializer
 
 

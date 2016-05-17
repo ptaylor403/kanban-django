@@ -6,6 +6,11 @@
     <title>Tasks</title>
   </head>
   <body>
+    <div id='current' class='columns'><h2>Current Tasks</h2>
+      <div id='waiting' ><h3>Waiting:</h3><ul id='waitingTasks'></ul></div>
+      <div id='doing' ><h3>Doing:</h3><ul id='doingTasks'></ul></div>
+      <div id='finished' ><h3>Finished:</h3><ul id='finishedTasks'></ul></div>
+    </div>
     <form id='task' action="index.html" method="post">
       <h2>Create New Task</h2>
       <label for="">Title:</label>
@@ -26,11 +31,7 @@
         <input type="text" name="status" value=""><br>
       <input id="button" type="submit" value="Create Task">
     </form>
-    <div id='current' class='columns'><h2>Current Tasks</h2>
-      <div id='waiting' ><h3>Waiting:</h3><ul id='waitingTasks'></ul></div>
-      <div id='doing' ><h3>Doing:</h3><ul id='doingTasks'></ul></div>
-      <div id='finished' ><h3>Finished:</h3><ul id='finishedTasks'></ul></div>
-    </div>
+
     <ul id="tasks"></ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="../../static/faketrello/faketrello.js"></script>

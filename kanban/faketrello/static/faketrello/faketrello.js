@@ -19,13 +19,13 @@ $task.submit(function(){
       status: $status.val()
     },
     success : function(json) {
-            $('#post-text').val(''); // remove the value from the input
-            console.log(json); // log the returned json to the console
-            console.log("success"); // another sanity check
-            var $li = $('<li>');
-            $li.text(json.title);
-        	$li.appendTo($tasks);
-          }
+      $('#post-text').val('');
+      console.log(json);
+      console.log("success");
+      var $li = $('<li>');
+      $li.text(json.title);
+  	  $li.appendTo($tasks);
+      }
   });
 
   return false;
@@ -38,7 +38,7 @@ $.get('http://localhost:8000/api/tasks/', function(tasks){
     console.log(task)
     var $li = $('<li>');
     $li.text(task.title);
-	$li.appendTo($tasks);
+	  $li.appendTo($tasks);
 })
 })
 

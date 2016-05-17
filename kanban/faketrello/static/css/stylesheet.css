@@ -2,18 +2,23 @@ label{
   font-family: inherit;
   font-style: italic;
   font-size: 20px;
-  vertical-align: right;
+  /*vertical-align: right;*/
 }
 
-/*div.columns       { width: 900px; }
-div.columns div   { width: 200px; height: 200px; float: left; }
-div.clear         { clear: both; }*/
-
-#current{
+div.columns       { width: 900px; }
+div.columns div   { width: 300px; height: 200px; float: left; }
+div.clear         { clear: both; }
+div.columns       { position: absolute; left: 10;}
+/*#current{
   position: absolute;
   top: 30px;
   right: 300px;
 
+}*/
+
+form{
+  position: absolute;
+  top: 350px;
 }
 
 #button{
@@ -30,8 +35,8 @@ input{
 
 #tasks{
   position: absolute;
-  top: 200px;
-  right: 300px;
+  top: 30px;
+  right: 10px;
 }
 
 body{
